@@ -187,21 +187,25 @@ h1, h2, h3 {
 .footer-nav {
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
 
 .footer-nav-list {
     list-style-type: none;
-    font-weight: 500;
     cursor: pointer;
     padding: 0;
 }
 
 .footer-nav-item {
-    margin-bottom: .6em;
+    margin-bottom: 1em;
     font-size: .75em;
-    color: #6F737F;
+    color: #52555e;
 }
 
+.footer .nav-link {
+    color: #6F737F;
+    font-weight: 500;
+}
 
 @media (min-width: 700px) {
     .sec3-secondary {
