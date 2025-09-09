@@ -145,3 +145,16 @@ img {
     padding: 1em;
 }
 
+@media (min-width: 700px) {
+    .sec3-secondary {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section3 {
+        display: flex;
+        gap: 1.5em;
+    }
+}
