@@ -33,10 +33,99 @@ img {
 .container {
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    display: flex;
+    padding: 1em;
 }
 
 .section1 {
     background: #3B4050;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+
+.nav-link {
+    color: #fff;
+    font-weight: 520;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    margin-bottom: .55em;
+}
+
+.btn {
+    background: #fff;
+    color: #136c72;
+    padding: .25em 1em;
+    border-radius: 1em;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 50%;
+    background: black;
+    color: #fff;
+    transition: opacity 250ms ease;
+}
+
+.nav-toggle:focus, .nav-toggle:hover {
+    opacity: 0.6;
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.ham {
+    width: 50%;
+    position: relative;
+}
+
+.ham, .ham::before, .ham::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.ham::before, .ham::after {
+    width: 100%;
+    content: '';
+}
+
+.ham::before {
+    transform: translateY(-6px);
+}
+
+.ham::after {
+    transform: translateY(3px);
 }
 
 .section2 {
@@ -56,6 +145,3 @@ img {
     padding: 1em;
 }
 
-.logo {
-    height: 30px;
-}
