@@ -187,7 +187,7 @@ h1, h2, h3 {
 .footer-nav {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
 
 .footer-nav-list {
@@ -208,15 +208,53 @@ h1, h2, h3 {
 }
 
 @media (min-width: 700px) {
+    .header {
+        padding-top: 1.5em;
+        justify-content: space-between;
+    }
+    
+    .nav-toggle {
+        display: none;
+    } 
+
+    
+    .nav {
+        visibility: visible;
+        flex-direction: row;
+        position: relative;
+
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+    }
+
+    .sec1-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        padding-bottom: 2em;
+    }
+
+    .sec1 {
+        align-self: flex-end;
+    }
+
+    .sec2-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
     .sec3-secondary {
         display: flex;
         justify-content: space-between;
+        gap: 1em;
     }
 }
 
 @media (min-width: 1000px) {
-    .section3 {
-        display: flex;
-        gap: 1.5em;
-    }
+  
 }
